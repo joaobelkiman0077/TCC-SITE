@@ -1,0 +1,321 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  z-index: 0;
+  background-color: #FFFFFF;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 1.5rem;
+  color: #505F98;
+  font-size: 14px;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+.btn-outline-primary {
+  background-color: #1E2C66;
+  color: #E7ECFF;
+  border-color: #1E2C66;
+  font-size: 14px;
+  margin-right: 150px;
+  border-radius: 20px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #16204d;
+  border-color: #16204d;
+}
+
+.btn-secondary{
+  border-radius: 20px;
+  width: 200px;
+  background-color: #505F98 !important;
+  color: #FFFFFF !important;
+}
+
+.btn-secondary:hover{
+  background-color: #16204d !important;
+  color: #FFFFFF;
+}
+
+.btn-outline-secondary{
+  border-radius: 20px;
+  width: 200px;
+  color: #505F98 !important;
+  border-color: #505F98 !important;
+}
+
+.btn-outline-secondary:hover{
+  background-color: #16204d;
+  color: #FFFFFF !important;
+}
+
+.navbar-brand {
+  color: #37447E;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+.navbar-brand:hover {
+  color: #1E2C66;
+}
+
+.navbar-brand:focus {
+  color: #37447E;
+}
+
+.text-primary {
+  font-size: 47px;
+  color: #37447E;
+}
+
+.text_1 {
+  font-size: 47px !important;
+  color: #505F98;
+}
+
+.text_2 {
+  font-size: 22px !important;
+  width: 470px;
+}
+
+.half-image {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh; /* Altura completa da tela */
+  z-index: 0; /* Certifique-se que está abaixo dos outros elementos */
+}
+
+.half-image img {
+  width: 100%;
+  height: auto;
+  min-height: 100vh; /* Garante que a div tenha altura mínima */
+}
+
+.btn-primary {
+  background-color: #E7ECFF;
+  border: none;
+  border-radius: 50px;
+  color: #505F98;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #E7ECFF;
+  border-radius: 50px;
+  color: #505F98;
+}
+
+.btn-custom{
+  width: 100px;
+}
+
+.btn-primary:hover {
+  background-color: #37447E;
+  border: 2px solid #E7ECFF;
+  border-radius: 50px;
+  color: #E7ECFF;
+}
+
+.btn-secondary:hover {
+  background-color: #37447E;
+  border: none;
+  border-radius: 50px;
+  color: #E7ECFF;
+}
+
+#question:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-control {
+  font-size: 47px;
+  color: #505F98;
+}
+
+#question {
+  resize: none; /* Impede o redimensionamento manual pelo usuário */
+  min-height: 100px; /* Altura mínima */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-brand {
+  color: #37447E;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+.nav-link {
+  color: #505F98;
+}
+
+.nav-link:hover {
+  color: #37447E;
+  text-decoration: underline;
+}
+
+#options-container {
+  display: flex;
+  flex-direction: column; /* Empilha os botões verticalmente */
+}
+
+.option-btn {
+  margin-bottom: 10px; /* Espaçamento entre os botões */
+  width: 50%; /* Botão ocupa a largura total disponível */
+  background-color: #505F98;
+  color: #E7ECFF;
+}
+
+.option-btn:last-child {
+  margin-bottom: 0; /* Remove o espaçamento no último botão */
+}
+
+.help-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1E2C66;
+  border-color: #1E2C66;
+  color: #E7ECFF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+.help-button:hover {
+  background-color: #505F98;
+  transform: scale(1.1);
+}
+.btn-voltar{
+  background-color: #505F98; /* Cor de fundo */
+  color: #FFFFFF; /* Cor do texto */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 25px; /* Bordas arredondadas */
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+  position: fixed; /* Posição fixa no canto */
+  left: 20px; /* Posição no canto esquerdo */
+  bottom: 20px; /* Posição no canto inferior */
+  transition: background-color 0.3s ease;
+}
+.help-menu {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+}
+
+.help-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.help-menu li {
+  margin-bottom: 10px;
+}
+
+.help-menu li:last-child {
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 975px) {
+  body {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+
+  .navbar-nav .nav-link {
+    margin-right: 0.5rem; /* Reduz o espaçamento entre os links */
+    font-size: 12px; /* Diminui o tamanho da fonte */
+  }
+
+  .btn-outline-primary {
+    font-size: 12px; /* Tamanho menor para botões */
+    margin-right: 10px; /* Reduz o espaçamento */
+    padding: 6px 12px;
+    width: 100%; /* Botão ocupa a largura total */
+  }
+
+  .btn-secondary,
+  .btn-outline-secondary {
+    width: 100%; /* Botões ocupam toda a largura */
+    font-size: 12px; /* Ajusta o tamanho do texto */
+    margin-bottom: 10px; /* Adiciona espaçamento entre botões */
+    margin-left: 0%;
+  }
+
+  .text-primary,
+  .text_1 {
+    font-size: 24px; /* Reduz o tamanho das fontes principais */
+  }
+
+  .text_2 {
+    font-size: 16px; /* Fonte menor */
+    width: 100%; /* Ajusta para largura total */
+  }
+
+  .navbar-brand {
+    font-size: 20px; /* Reduz o tamanho do texto da marca */
+  }
+
+  #options-container {
+    flex-direction: column; /* Mantém os botões empilhados */
+    align-items: center; /* Centraliza os botões */
+  }
+
+  .option-btn {
+    width: 100%; /* Botões ocupam toda a largura */
+    margin-bottom: 5px; /* Espaçamento entre botões */
+    font-size: 14px; /* Ajuste no tamanho do texto */
+  }
+
+  .help-button {
+    width: 40px; /* Botão menor */
+    height: 40px;
+  }
+  .btn-voltar {
+    font-size: 12px; /* Ajusta o tamanho do texto */
+    padding: 6px 12px;
+    bottom: 15px; /* Ajusta a posição */
+    left: 15px;
+  }
+  .form-control{
+    text-align: center;
+  }
+}
+
+@media (max-width: 976px) {
+  .half-image {
+    display: none; /* Remove a imagem lateral em dispositivos móveis */
+  }
+  .form-control{
+    text-align: center;
+  }
+}
+
+@media (max-width: 1080px) {
+  .form-control{
+    font-size: 42px;
+  }
+}

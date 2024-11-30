@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>TCC</title>
+
+  </head>
+  <body>
+    <svg class='half-image' width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="1.0" d="M1172.66 877.306C1292.59 776.783 1311.18 586.702 1392.41 446.473C1420.69 397.678 1457.23 354.008 1476.29 299.877C1520.05 175.974 1459.82 35.4279 1379.2 -62.981C1340.76 -109.927 1295.85 -152.936 1241.52 -172.723C1199.74 -187.94 1154.94 -188.574 1110.97 -188.971L340.503 -196.896C254.481 -197.768 158.901 -194.624 97.0524 -128.208C54.4253 -82.4778 37.1097 -15.6918 22.4153 48.056C4.3584 126.387 -12.004 211.454 16.0874 286.06C48.1768 371.418 129.327 419.79 179.738 493.445C261.55 612.777 259.67 793.269 363.855 888.534C412.492 932.996 476.671 950.432 539.208 959.15C657.108 975.609 768.785 944.541 884.567 948.873C983.536 952.572 1090.55 946.126 1172.66 877.306Z" fill="#E7ECFF"/>
+        <image href="img/acordo.svg" x=100 y=50 width="400" height="400" />   
+    </svg>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#37447E" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="mx-auto order-0 position-absolute start-50 translate-middle-x">
+                <a class="navbar-brand" href="index.html">CheckHealth</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="deseja_continuar.html">Quero me avaliar</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Botão que aparece no canto direito no modo desktop -->
+            <div class="d-none d-lg-flex ms-auto">
+                <a class="btn btn-outline-primary rounded-pill" href="deseja_continuar.html">Quero me avaliar!</a>
+            </div>
+        </div>
+    </nav>
+    
+<div class="container mt-2">
+    <div class="container mt-5">
+        <form id="dynamic-form">
+            <div class="form-group">
+                <textarea class="form-control" id="question" readonly style="background-color: transparent; border: none"></textarea>
+            </div>
+            <div id="options-container" class="form-group">
+                <button type="button" class="btn btn-outline-primary mt-2 option-btn" data-value="option1">Opção 1</button>
+                <button type="button" class="btn btn-outline-primary mt-2 option-btn" data-value="option2">Opção 2</button>
+                <button type="button" class="btn btn-outline-primary mt-2 option-btn" data-value="option3">Opção 3</button>
+            </div>
+        </form>
+    </div>
+</div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- JavaScript customizado -->
+    <script src="script.js"></script>
+  </body>
+</html>
