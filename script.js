@@ -124,6 +124,9 @@ function loadQuestion(index) {
                 }else if(currentQuestion.jsonKey === 'condicao_fumante'){
                      // Converte a primeira letra para minúscula para envio ao JSON
                     responseValue = option.charAt(0).toLowerCase() + option.slice(1);
+                }else if(currentQuestion.jsonKey === 'tipo_trabalho'){
+                    if(responseValue === 'Conta própria')
+                    responseValue = 'Conta propria';
                 }
                  // Remove o acento de "Não" se existir
                 if (responseValue === "Não") {
