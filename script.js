@@ -11,7 +11,7 @@ const questions = [
     { question: "Possui hipertensão?", options: ["Sim", "Não"], jsonKey: "hipertensao" },
     { question: "Possui doença cardíaca?", options: ["Sim", "Não"], jsonKey: "doenca_cardiaca" },
     { question: "É casado?", options: ["Sim", "Não"], jsonKey: "casado" },
-    { question: "Tipo de trabalho?", options: ["Privado", "Conta própria", "Governamental"], jsonKey: "tipo_trabalho" },
+    { question: "Tipo de trabalho?", options: ["Privado", "Conta própria", "Governamental", "Desempregado"], jsonKey: "tipo_trabalho" },
     { question: "Tipo de residência?", options: ["Rural", "Urbano"], jsonKey: "tipo_residencia" },
     { question: "Nível de glicose?", options: ["Não sei informar"], jsonKey: "nivel_glicose", type: "numeric" },
     { question: "Qual o seu IMC?", options: [], jsonKey: "imc", type: "imc" },
@@ -125,8 +125,13 @@ function loadQuestion(index) {
                      // Converte a primeira letra para minúscula para envio ao JSON
                     responseValue = option.charAt(0).toLowerCase() + option.slice(1);
                 }else if(currentQuestion.jsonKey === 'tipo_trabalho'){
-                    if(responseValue === 'Conta própria')
-                    responseValue = 'Conta propria';
+                    if(responseValue === 'Conta própria'){
+                        responseValue = 'Conta propria';
+                    }else if(responseValue === 'Desempregado'){
+                        responseValue = 'Governamental';
+                    }
+
+                    
                 }
                  // Remove o acento de "Não" se existir
                 if (responseValue === "Não") {
